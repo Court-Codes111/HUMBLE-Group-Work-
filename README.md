@@ -1,15 +1,17 @@
-========   Mystery Box E-commerce Website   =======
-
----------Project Overview-------------
-
+Mystery Box E-commerce Website  
+=================================
+Project Overview
+------------------------
 A mystery box e-commerce platform where users can register, login, browse products, add items to cart, purchase mystery boxes, and generate invoices.
 The website implements user authentication, shopping cart functionality, and invoice generation.
 
 🚀 Live Demo
+==================
  https://humble-group-work.vercel.app/
+ ----------------------------------------
 
------------- FEATURES  -------------
-
+FEATURES  
+--------------------------
 🔐 User Authentication
 User registration with validation (TRN, password requirements, age verification)
 Login system with 3-attempt limit and account lockout
@@ -46,7 +48,8 @@ localStorage API - Data persistence
 
 
 
-========================To Create Your Own Account:  =========================
+To Create Your Own Account:  
+------------------------------
 
 Go to Registration page
 Fill all required fields (Delivery Info & Pickup Location are not required)
@@ -59,7 +62,7 @@ Must be 18 years or older
 
 To login use your TRN & Password
 Can reset Password if necessary
----------------------------------
+
 
 
 
