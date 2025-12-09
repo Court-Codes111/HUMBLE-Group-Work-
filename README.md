@@ -1,5 +1,6 @@
 ========   Mystery Box E-commerce Website   =======
----------Project Overview
+
+---------Project Overview-------------
 A mystery box e-commerce platform where users can register, login, browse products, add items to cart, purchase mystery boxes, and generate invoices.
 The website implements user authentication, shopping cart functionality, and invoice generation.
 
@@ -11,7 +12,6 @@ The website implements user authentication, shopping cart functionality, and inv
 User registration with validation (TRN, password requirements, age verification)
 Login system with 3-attempt limit and account lockout
 Password reset functionality
-
 
 
 🛒 Shopping Experience
