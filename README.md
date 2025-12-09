@@ -7,7 +7,8 @@ The website implements user authentication, shopping cart functionality, and inv
 🚀 Live Demo
  https://humble-group-work.vercel.app/
 
------------------------- FEATURES  -----------------------------
+------------ FEATURES  -------------
+
 🔐 User Authentication
 User registration with validation (TRN, password requirements, age verification)
 Login system with 3-attempt limit and account lockout
@@ -56,11 +57,26 @@ At least three numbers
 Must be 18 years or older
 
 To login use your TRN & Password
-Can reset if necessary
+Can reset Password if necessary
 ===========================
 
-AS LONG AS THE CODE IS RUNNING I'M FINE
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AS LONG AS THE CODE IS RUNNING I'M FINE
+=======================================
 
 
 
