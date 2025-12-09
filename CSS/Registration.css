@@ -1,0 +1,125 @@
+body{
+         background: 
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+        url('../Assets/mystery.jpg');/*controls the color of the background*/
+         background-size: cover;       /* Cover entire area */
+         background-position: center;   /* Center the image */
+         background-repeat: no-repeat;  /* Don't repeat the image */
+         background-attachment: fixed;  /* Fixed position when scrolling */
+
+        }
+     
+.Lcontainer {
+width: 500px;
+height: auto;
+background-color: rgba(36, 0, 70, 0.8);
+border-radius: 2%;
+margin: 0 auto;
+padding: 25px;
+}
+
+label, p {
+color: white ;
+font-size: 40px;
+font-family: 'Times New Roman', Serif;
+margin: 10px 0 5px 10px;
+}
+
+header h1 {
+            font-family: 'Lucida Handwriting', Cursive;
+            font-weight: 700;
+            font-size: 100px;
+            color: #9D4EDD;
+            margin: 30px 0 10px 0;
+            text-align: center;
+            text-shadow: 0 0 20px blue;
+                }
+
+        input {
+            width: 400px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: #E0AAFF;
+            margin: 5px 0 10px 5px ;
+            /* Text Edits */
+            color: purple;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center; 
+            font-family: 'Papyrus', fantasy ;
+        }
+        select{
+             width: 400px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: #E0AAFF;
+            margin: 5px 0 10px 5px ;
+            /* Text Edits */
+            color: purple;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center; 
+            font-family: 'Papyrus', fantasy ;
+        }
+        input:hover {
+            border: 2px solid purple;
+            box-shadow: 0 0 20px purple;
+        }
+
+        .Lcontainer button[type="submit"] {
+            width: 200px;
+            height: 50px;
+            border-radius: 50px;
+            background: linear-gradient(to right,#FF00FF , #240046 );
+            margin: 20px auto;
+            display: block;
+            font-weight:700;
+            font-size: 30px;
+
+        }
+
+        .Lcontainer button[type="submit"]:hover {
+            box-shadow: 0 0 50px purple;
+        }
+
+        
+
+        .p-cont {
+             display: flex;
+    flex-direction: row;
+    gap: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
+::placeholder {
+            color: black;
+            font-size: 20px;
+            font-style: italic;
+            }
+
+@media (max-width: 600px) {
+
+   .Lcontainer {
+      width: 450px;
+
+   }
+}
+.clear-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(to right,#FF006A , #9D00FF );
+    margin: 10px auto;
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.clear-btn:hover {
+    box-shadow: 0 0 50px hotpink;
+}

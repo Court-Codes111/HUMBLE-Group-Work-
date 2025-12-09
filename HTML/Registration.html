@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../CSS/Registration.css"/>
+        <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8>"UTF-8>
+        <link rel="shortcut icon" type="image/png" href="../Assets/B-icon1.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body class="Universe">
+        <header>
+        <h1>Register</h1>
+    </header>
+
+    <div class="Lcontainer">
+     <main>
+       <form id="registrationForm" action="index.html" method="POST" onsubmit="return valid()">
+
+            <section>
+        <label>Username:</label>
+        <input type="text" name="username" minlenght="5" maxlenght="15"  required>
+         </section>
+
+          <section>
+        <label>Contact Info:</label>
+        <input type="tel" name="contact" placeholder=" +1 (___) ___-___" required>
+            </section> 
+
+
+             <section>
+            <label>Date Of Birth:</label>
+        <input type="date" name="dob" required>
+             </section>
+
+              <section>
+        <label>Email:</label>
+        <input type="email" name="mail" required>
+             </section>
+
+
+              <section>
+        <label>Delivery Info:</label>
+        <input type="text" name="street" placeholder="Street"  >
+        <input type="text" name="city" placeholder="City">
+        <input type="text" name="parish" placeholder="Parish"  >
+        <input type="text" name="ZIP" placeholder="ZIP code">
+        <input type="text" name="country" placeholder="Country" >
+             </section>
+
+              <section>
+        <label>Pickup Location:</label>
+        <input type="text" name="locate" >
+             </section>
+
+              <section>
+        <label>Verification ID:</label>
+        <input type="text" name="ID" required>
+            </section>
+
+             <section>
+        <label>Password:</label>
+        <input type="password" name="usercode" required>
+            </section>
+
+            <section>
+        <label>TRN:</label>
+        <input type="number" id="TRN" name="TRN" placeholder="Enter TRN">
+            </section>
+
+        <section>
+    <label>Gender:</label>
+    <select name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+</section>
+         <button type="submit">Register</button>
+         <button type="button" onclick="clearForm()" class="clear-btn">Clear</button>
+       </form>
+
+     </main>
+    </div>
+    <script src="../JS/Registration.js"></script>
+    </body>
+</html>

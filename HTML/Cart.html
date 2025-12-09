@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Cart</title>
+
+    <link rel="shortcut icon" type="image/png" href="../Assets/B-icon1.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../CSS/C-styles.css">
+</head>
+
+<body>
+    <header class="head1">
+        <h1>
+            <a href="Home.html">Close</a> > CART &#128722;
+        </h1>
+
+        <section class="profile">
+            <p>USERNAME</p>
+            <img src="../Assets/alter.jpg" alt="profile img">
+        </section>
+    </header>
+
+
+
+    <main class="cart-checkout">
+
+        <div class="cart-items">
+            <h1>YOUR CART...</h1>
+
+            <section id="cartItems">
+                <!-- Cart items will be displayed here by JavaScript -->
+            </section>
+
+
+            <div class="check">
+                <button onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
+
+
+
+        <div class="checkout-items">
+            <div class="unbox-section">
+                <h2>UNBOX ITEMS</h2>
+
+                <section id="unboxItems">
+                    <!-- Unbox items will be displayed here by JavaScript -->
+                </section>
+
+            </div>
+
+            <div class="order-summary">
+                <h2>ORDER SUMMARY</h2>
+
+                <div class="price-details">
+
+                    <div class="price-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+
+                    <div class="price-row">
+                        <span>Shipping:</span>
+                        <span id="shipping">$0.00</span>
+                    </div>
+
+                    <div class="price-row">
+                        <span>Tax:</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+
+                    <div class="price-row total">
+                        <span>Total Cost: </span>
+                        <span id="totalItems">$0.00</span>
+                    </div>
+                </div>
+
+                <button class="place-order-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript File -->
+    <script type="text/javascript" src="../JS/C-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+<!-- 
+    Completed By Mark Palmer
+Question 1: b: Reset Password & Error handling
+ 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/Login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="../Assets/B-icon1.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Reset Password</title>
+</head>
+<body class="Universe">
+    <header>
+        <h1>Reset Password</h1>
+    </header>
+
+    <div class="Lcontainer">
+        <main>
+            <p style="color: white; text-align: center; font-size: 20px; margin-bottom: 20px;">
+                Your account has been locked due to too many failed login attempts.
+            </p>
+            
+            <form id="resetForm" onsubmit="return resetPassword()">
+                <section>
+                    <label>TRN:</label>
+                    <input type="number" id="resetTRN" name="resetTRN" placeholder="Enter your TRN" required>
+                </section>
+
+                <section>
+                    <label>New Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" placeholder="Enter new password" required>
+                </section>
+
+                <section>
+                    <label>Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm new password" required>
+                </section>
+
+                <button type="submit" id="reset" >Reset Password</button>
+                <button type="button" onclick="window.location.href='index.html'" class="clear-btn">Back to Login</button>
+            </form>
+            
+            <div id="resetMessage" style="color: #FF6B6B; text-align: center; margin-top: 20px; display: none;"></div>
+        </main>
+    </div>
+    
+    <script src="../JS/Reset.js"></script>
+</body>
+</html>

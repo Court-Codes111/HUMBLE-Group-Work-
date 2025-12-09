@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/Login.css"/>
+         <meta charset="utf-8" />
+         <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+         <title>Login</title>
+
+         <link rel="shortcut icon" type="image/png" href="../Assets/B-icon1.png">
+
+         <!-- Google Font -->
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+         <!-- Material Icons -->
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+    
+    <body class="Lcontainer">
+            <header>
+   		       <h1>Login</h1>
+        	</header>
+   	<div class="Lcontainer">
+   	 <main>
+       <form id="LoginForm" action="Home.html" method="POST" onsubmit="return checkLogin()">
+
+            <section>
+   		<label>Enter TRN:</label>
+   		<input type="number" name="TRN" required id="TRN">
+
+   		<label> Enter Password:</label>
+   		<input type="password" name="usercode" required id="password">
+            </section>
+
+
+            <section class="check">
+        <label> Remember me:</label>
+        <input type="checkbox" name="rem">
+
+        
+
+        <p>Do not have a account? 
+        <a href="Registration.html">Register</a>
+        </p>
+            </section>
+
+<section class="links-section">
+    <p>  FORGOT PASSWORD:
+    <a href="Error.html" class="link">Reset Password</a>
+      </section>
+    </p>
+   		 <button type="submit" >SUBMIT</button>
+         </form>
+  
+
+        
+    <div class="p-cont">
+            <button type="button" class="present"  onclick="window.location.href='Home.html'">
+            <span class="material-icons">email</span>
+            <span class="text">Email</span>
+            </button>
+
+            <button type="button" class="present" onclick="window.location.href='Home.html'">
+            <span class="material-icons">photo_camera</span>  <!-- For Instagram -->
+            <span class="text">Instagram</span>
+            </button>
+
+            <button type="button" class="present" onclick="window.location.href='Home.html'">
+            <span class="material-icons">code</span>          <!-- For GitHub -->
+            <span class="text">Github</span>
+             </button>
+     </div>
+
+       </form>
+   	</div>
+                <div id="errorMessage" style="color: red; text-align: center; margin-top: 10px; display: none;"></div>
+            </main>
+        </div>
+        <script src="../JS/Login.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+
+<!-- 
+    Completed By Jerome McKenzie
+Question 6: a.  ShowUserFrequency() – Show’s user requency based on Gender and Age Group
+ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+     <link rel="shortcut icon" type="image/png" href="../Assets/B-icon1.png">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+  
+    <link rel="stylesheet" href="../CSS/D-styles.css">
+    
+</head>
+<body>
+    
+    <div class="dashboard-container">
+        
+        <!-- Header -->
+        <header class="dashboard-header">
+            <h1>
+                <a href="Home.html">HOME</a> > USER DASHBOARD
+            </h1>
+            <button onclick="window.print()" class="print-btn">
+                <span class="material-icons">print</span> Print Report
+            </button>
+        </header>
+
+        <!-- Dashboard Title -->
+        <div class="stats-section">
+            <h2>📊 User Statistics Dashboard</h2>
+            <p>View registered users by gender distribution</p>
+        </div>
+
+        <!-- Gender Statistics Section -->
+        <div class="stats-section">
+            <h3>Gender Distribution</h3>
+            
+            <div class="stats-grid">
+                <div class="stat-card" id="maleCount">
+                    <div class="stat-icon">👨</div>
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Male Users</div>
+                </div>
+                
+                <div class="stat-card" id="femaleCount">
+                    <div class="stat-icon">👩</div>
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Female Users</div>
+                </div>
+                
+                <div class="stat-card" id="totalUsers">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Total Registered Users</div>
+                </div>
+            </div>
+            
+            <!-- Gender Chart -->
+            <div class="chart-container">
+                <h4>Gender Distribution Chart</h4>
+                <div class="chart-bar">
+                    <div class="chart-bar-male" id="maleBar" style="width: 0%">
+                        <span class="chart-label">Male: 0%</span>
+                    </div>
+                    <div class="chart-bar-female" id="femaleBar" style="width: 0%">
+                        <span class="chart-label">Female: 0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User List Section -->
+        <div class="stats-section">
+            <h3>Registered Users List</h3>
+            <div id="userList">
+                <!-- Users will be loaded here -->
+                <div class="no-data">No users found. Register some users first!</div>
+            </div>
+        </div>
+
+        <!-- Dashboard Controls -->
+        <div class="dashboard-controls">
+            <button onclick="showUserFrequency()" class="refresh-btn">
+                <span class="material-icons">refresh</span> Refresh Statistics
+            </button>
+            
+        </div>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="../JS/D-script.js"></script>
+</body>
+</html>

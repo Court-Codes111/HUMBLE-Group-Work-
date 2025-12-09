@@ -1,0 +1,223 @@
+body{
+         background: 
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+        url('../Assets/mystery.jpg');/*controls the color of the background*/
+         background-size: cover;       /* Cover entire area */
+         background-position: center;   /* Center the image */
+         background-repeat: no-repeat;  /* Don't repeat the image */
+         background-attachment: fixed;  /* Fixed position when scrolling */
+
+   		}
+   		.Lcontainer {
+   			width: 500px;
+   			height: auto;
+   			background-color: rgba(36, 0, 70, 0.8);
+   			border-radius: 2%;
+   			margin: 0 auto;
+            padding: 25px;
+   		}
+
+        label {
+            color: white ;
+            font-size: 40px;
+            font-family: 'Times New Roman', Serif;
+            margin-left: 10px;
+
+        }
+
+        .check  {
+            color: white ;
+            display: flex;
+            flex-direction: row;
+            align-items: center;     /* Vertically align items */
+            flex-wrap: nowrap;       /* Prevent wrapping */
+            gap: 10px;
+            margin: 10px 0 0 10px;
+
+        }
+
+        .check label {
+            font-size: 20px;
+           
+        }
+
+        .check input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: #9D4EDD; /* Checkbox color */
+            margin: 0 16px 0-5px;
+        }
+
+        .check p {
+             white-space: nowrap;     /* Keep text on one line */
+             margin: 0;          
+             font-size: 20px;
+             
+        }
+
+   		header h1 {
+   			font-family: 'Lucida Handwriting', Cursive;
+   			font-weight: bold;
+            font-size: 100px;
+   			color: #9D4EDD;
+   			margin: 30px 0 10px 0;
+            text-align: center;
+            text-shadow: 0 0 20px blue;
+              	}
+                
+   		input {
+   			width: 400px;
+   			height: 30px;
+   			border-radius: 50px;
+   			background-color: #E0AAFF;
+            margin: 5px;
+            /* Text Edits */
+                         
+            color: purple;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center; 
+            font-family: 'Papyrus', fantasy ;
+   		}
+
+        input:hover{
+            border: 2px solid purple;
+            box-shadow: 0 0 20px purple;
+        }
+
+        .Lcontainer button[type="submit"] {
+            min-width: 200px;
+            min-height: 50px;
+            width: auto;
+            height: auto;
+            border-radius: 50px;
+            background: linear-gradient(to right,#FF00FF , #240046 );
+            margin: 20px auto;
+            display: block;
+            font-weight:bold;
+            font-size: 30px;
+
+        }
+
+        .Lcontainer button[type="submit"]:hover {
+            box-shadow: 10px 10px 50px purple;
+        }
+
+        .material-icons{
+            color:white;
+            padding-left: 2px;   
+        }
+
+
+        .present{
+            display: flex;
+            width: 40px;
+            height: 30px;
+            background-color: black;
+            padding: 4px;
+            border-radius: 30%;
+            align-items: center;
+            transition: width 0.3s;
+            overflow: hidden;
+
+        }
+
+        .present:hover {
+            background-color: #9D4EDD;
+            box-shadow: 0 0 15px #C77DFF;
+            width: 110px;
+            border-radius: 10%;
+        }
+
+        .text{
+            margin-left: 10px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .present:hover .text {
+            opacity: 1;
+            font-weight: bolder;
+        }
+
+        .p-cont {
+             display: flex;
+    flex-direction: row;
+    gap: 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: purple;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+        }
+
+@media (max-width: 600px) {
+
+   .Lcontainer {
+      width: 450px;
+
+   }
+
+
+}
+
+
+
+
+
+/*ERROR PAGE*/
+
+.links-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    color: white;
+    font-size: 18px;
+}
+
+.link {
+    color: #9D4EDD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #C77DFF;
+    text-decoration: underline;
+}
+
+#resetMessage {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.clear-btn {
+    min-width: 200px;
+    min-height: 50px;
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+    background: linear-gradient(to right,#FF006A , #9D00FF );
+    margin: 10px auto;
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.clear-btn:hover {
+    box-shadow: 0 0 50px hotpink;
+}

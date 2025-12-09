@@ -1,0 +1,432 @@
+ body {
+            background: linear-gradient(135deg, #10002B 0%, #3C096C 100%);
+            color: #E0AAFF;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== HEADER STYLES ===== */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #10002B 0%, #240046 100%);
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 2px solid #5A00FF;
+    box-shadow: 0 5px 15px rgba(90, 0, 255, 0.2);
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    color: #E0AAFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.dashboard-header a {
+    color: #E0AAFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.dashboard-header a:hover {
+    color: #C77DFF;
+    text-shadow: 0 0 10px rgba(199, 125, 255, 0.5);
+}
+
+.print-btn {
+    background: linear-gradient(145deg, #5A00FF, #3C096C);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.print-btn:hover {
+    background: linear-gradient(145deg, #7B2CBF, #5A00FF);
+    box-shadow: 0 0 15px rgba(224, 170, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* ===== STATS SECTION STYLES ===== */
+.stats-section {
+    background-color: #240046;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 2px solid #3C096C;
+}
+
+.stats-section h2 {
+    color: #E0AAFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.stats-section h3 {
+    color: #E0AAFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    margin: 0 0 20px 0;
+    border-bottom: 2px solid #5A00FF;
+    padding-bottom: 10px;
+}
+
+.stats-section h4 {
+    color: #E0AAFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+.stats-section p {
+    color: #EBC9FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ===== STATS GRID STYLES ===== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: linear-gradient(145deg, #3C096C, #5A188A);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #5A00FF;
+    transition: all 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(90, 0, 255, 0.3);
+    background: linear-gradient(145deg, #5A188A, #7B2CBF);
+}
+
+.stat-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.stat-value {
+    color: #E0AAFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-shadow: 0 0 10px rgba(224, 170, 255, 0.5);
+}
+
+.stat-label {
+    color: #EBC9FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ===== AGE GROUP STATS GRID ===== */
+.age-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.age-stat-card {
+    background: linear-gradient(145deg, #240046, #3C096C);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #E0AAFF;
+    transition: all 0.3s;
+}
+
+.age-stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(224, 170, 255, 0.2);
+    background: linear-gradient(145deg, #3C096C, #5A188A);
+}
+
+.age-group-label {
+    color: #E0AAFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.age-group-value {
+    color: #C77DFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(199, 125, 255, 0.5);
+}
+
+/* ===== CHART STYLES ===== */
+.chart-container {
+    background-color: #10002B;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #5A00FF;
+    margin-bottom: 30px;
+}
+
+.chart-bar {
+    display: flex;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #240046;
+    border: 2px solid #3C096C;
+}
+
+.chart-bar-male {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s ease-in-out;
+    min-width: 0;
+}
+
+.chart-bar-female {
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s ease-in-out;
+    min-width: 0;
+}
+
+.chart-label {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* ===== USER LIST STYLES ===== */
+#userList {
+    min-height: 200px;
+}
+
+.no-data {
+    text-align: center;
+    color: #EBC9FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 50px;
+    background-color: #10002B;
+    border-radius: 10px;
+    border: 2px dashed #5A00FF;
+}
+
+.user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.user-card {
+    background: linear-gradient(145deg, #3C096C, #240046);
+    border: 2px solid #5A00FF;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(90, 0, 255, 0.3);
+    background: linear-gradient(145deg, #5A188A, #3C096C);
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #5A00FF;
+}
+
+.user-gender {
+    font-size: 2em;
+}
+
+.user-name {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #E0AAFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-details p {
+    margin: 8px 0;
+    color: #EBC9FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+}
+
+.user-details strong {
+    color: #C77DFF;
+    min-width: 100px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.gender-male {
+    color: #3498db;
+    text-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.gender-female {
+    color: #e74c3c;
+    text-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+}
+
+.gender-other {
+    color: #9b59b6;
+    text-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+}
+
+/* ===== DASHBOARD CONTROLS ===== */
+.dashboard-controls {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #3C096C;
+}
+
+.refresh-btn, .clear-btn {
+    background: linear-gradient(145deg, #5A00FF, #3C096C);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.refresh-btn:hover {
+    background: linear-gradient(145deg, #7B2CBF, #5A00FF);
+    box-shadow: 0 0 15px rgba(224, 170, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.clear-btn {
+    background: linear-gradient(145deg, #e74c3c, #c0392b);
+}
+
+.clear-btn:hover {
+    background: linear-gradient(145deg, #ff6b6b, #e74c3c);
+    box-shadow: 0 0 15px rgba(231, 76, 60, 0.5);
+    transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+    
+    .dashboard-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 22px;
+    }
+    
+    .stats-grid, .age-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .user-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-controls {
+        flex-direction: column;
+    }
+    
+    .refresh-btn, .clear-btn, .print-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .stat-value {
+        font-size: 36px;
+    }
+    
+    .age-group-value {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-section {
+        padding: 15px;
+    }
+    
+    .stats-section h2 {
+        font-size: 26px;
+    }
+    
+    .stats-section h3 {
+        font-size: 22px;
+    }
+    
+    .stat-card, .age-stat-card {
+        padding: 15px;
+    }
+    
+    .user-card {
+        padding: 15px;
+    }
+}

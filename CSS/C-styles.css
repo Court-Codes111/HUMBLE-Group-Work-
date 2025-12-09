@@ -1,0 +1,293 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+    background-color: black;
+    margin: 0;
+}
+
+/* ===== HEADER STYLES ===== */
+.head1 {
+    display: flex;
+    align-items: center;
+    background-color: #10002B;
+    font-family: 'Comic Sans MS', sans-serif;
+    width: 100%;
+    height: 70px;
+    padding: 30px;
+    margin-top: -10px;
+    gap: 100px;
+}
+
+.head1 h1 {
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    margin-left: 300px;
+}
+
+.profile img {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #C77DFF;
+    object-fit: cover;
+}
+
+.profile p {
+    font-size: 40px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: purple;
+}
+
+/* ===== MAIN LAYOUT STYLES ===== */
+.cart-checkout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+/* ===== CHECKOUT ITEMS SECTION (RIGHT SIDE) ===== */
+.checkout-items {
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: #5A188A;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.checkout-items h2 {
+    color: #EBC9FF;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+/* ===== CART ITEMS SECTION (LEFT SIDE) ===== */
+.cart-items {
+    width: 55%;
+    background-color: #240046;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-items h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* ===== CARTBOX STYLES (USED IN JAVASCRIPT) ===== */
+.cartbox {
+    width: 300px;
+    height: auto;
+    background-color: #C77DFF;
+    border: 1px solid #240046;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+
+}
+
+.cartbox img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    filter: drop-shadow(0 0 15px purple);
+}
+
+.cartbox button {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: #8a2be8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.cartbox button:hover {
+    background-color: #E0AAFF;
+}
+
+/* ===== CLEAR CART BUTTON CONTAINER ===== */
+.check button {
+    width: 30%;
+    background-color: #5A00FF;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.check button:hover {
+    background-color: #7B2CBF;
+    box-shadow: 0 0 15px #EBC9FF;
+}
+
+/* ===== UNBOX ITEMS SECTION STYLES ===== */
+.unbox-section {
+    background-color: #3C096C;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #5A00FF;
+}
+
+.unbox-section h2 {
+    color: #E0AAFF;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ===== INDIVIDUAL UNBOX ITEM STYLES ===== */
+
+.unbox-info {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #5A00FF;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.unbox-info img {
+    width: 70px;
+    margin-right: 15px;
+}
+
+
+
+/* ===== BOTTOM ORDER SUMMARY SECTION ===== */
+.order-summary {
+    background-color: #5A188A;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #E0AAFF;
+}
+
+.order-summary h2 {
+    color: #E0AAFF;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.price-details {
+    border-top: 2px solid #E0AAFF;
+    padding-top: 15px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.price-row.total {
+    font-size: 24px;
+    font-weight: bold;
+    border-top: 1px solid #E0AAFF;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* ===== PLACE ORDER BUTTON ===== */
+.place-order-btn {
+    width: 100%;
+    background-color: #5A00FF;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.place-order-btn:hover {
+    background-color: #7B2CBF;
+    box-shadow: 0 0 15px #EBC9FF;
+}
+
+@media (max-width: 600px) {
+    
+  .cart-checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px;
+    }
+
+  .head1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 200px;
+    padding: 30px;
+    margin-top: -10px;
+    gap: 10px;
+}
+
+ .head1 h1 {
+    font-size: 40px;
+    color: white;
+    margin-left: 10px;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    margin-left: 100px;
+}
+
+
+.profile p {
+    font-size: 40px;
+    margin: 0;
+}
+
+
+.cart-items {
+    width: 90%;
+}
+
+.checkout-items {
+    width: 70%;
+}
+
+
+}
