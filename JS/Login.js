@@ -115,9 +115,10 @@ function checkLogin() {
 
 
     });
+    */
 }
 
-*/
+
 
 
 
@@ -128,4 +129,5 @@ function checkLogin() {
 function clearForm() {
     // Reset all input fields in the login form to empty/default values
     document.getElementById("LoginForm").reset();
+
 }
