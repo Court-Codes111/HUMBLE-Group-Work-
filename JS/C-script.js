@@ -39,7 +39,6 @@ function clearCart() {
     if (confirm("Clear entire cart?")) {
         // Remove both cart and purchases data from localStorage
         localStorage.removeItem('cart');
-        localStorage.removeItem('purchases');
         // Refresh both displays after clearing
         displaycart();
         showPurchases();
@@ -152,4 +151,5 @@ function proceedToCheckout() {
     
     // Redirect to checkout page
     window.location.href = "Checkout.html";
+
 }
